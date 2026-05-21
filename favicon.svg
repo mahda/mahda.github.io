@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="blobGrad" cx="35%" cy="30%" r="70%" fx="30%" fy="25%">
+      <stop offset="0%" stop-color="rgba(255, 184, 106, 0.95)" />
+      <stop offset="30%" stop-color="rgba(255, 210, 120, 0.8)" />
+      <stop offset="55%" stop-color="rgba(254, 230, 133, 0.5)" />
+      <stop offset="75%" stop-color="rgba(254, 249, 194, 0.2)" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <filter id="blurBlob" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+  </defs>
+  <!-- Main organic blob shape -->
+  <path d="M50 5
+           C75 5, 95 20, 92 50
+           C89 80, 75 95, 50 92
+           C25 89, 5 75, 8 50
+           C11 25, 25 5, 50 5Z" 
+        fill="url(#blobGrad)" 
+        filter="url(#blurBlob)" />
+  
+  <!-- Inner lighter accent blob -->
+  <ellipse cx="40" cy="35" rx="28" ry="22" 
+           fill="rgba(255, 200, 120, 0.6)" 
+           filter="url(#blurBlob)" />
+           
+  <!-- Center warm core -->
+  <circle cx="42" cy="38" r="15" 
+          fill="rgba(255, 170, 90, 0.7)" 
+          filter="url(#blurBlob)" />
+</svg>
