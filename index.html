@@ -267,6 +267,36 @@ body {
     opacity: 1;
 }
 
+.faq-answer p {
+.faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-list li {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29.25px;
+    letter-spacing: -0.45px;
+    color: var(--color-text);
+    padding-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.faq-list li::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.faq-list li:last-child {
+    padding-bottom: 0;
+}
+
 /* Blog and Resources */
 .blog-resources {
     max-width: var(--content-width);
@@ -407,7 +437,15 @@ body {
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Możesz na mnie liczyć, jeśli potrzebujesz: <ul>nowej lub odświeżonej strony internetowej lub aplikacji,</ul><ul>wsparcia na etapie koncepcji (np. badania z użytkownikami, research, wypracowanie strategii i roadmapy),</ul><ul>przeprowadzenia jednorazowego lub cyklu warsztatów dla zespołu,</ul><ul>wsparcia dla istniejącego zespołu projektowego,</ul><ul>wsparcia w rekrutacji i budowania zespołu designerów,</ul><ul>konsultacji na etapie wdrożenia i kontaktu z developerami.</ul></p>
+                        <p>Możesz na mnie liczyć, jeśli potrzebujesz: </p>
+                        <ul class="faq-list">
+                            <li>nowej lub odświeżonej strony internetowej lub aplikacji,</li>
+                            <li>wsparcia na etapie koncepcji (np. badania z użytkownikami, research, wypracowanie strategii i roadmapy),</li>
+                            <li>przeprowadzenia jednorazowego lub cyklu warsztatów dla zespołu,</li>
+                            <li>wsparcia dla istniejącego zespołu projektowego,</li>
+                            <li>wsparcia w rekrutacji i budowania zespołu designerów,</li>
+                            <li>konsultacji na etapie wdrożenia i kontaktu z developerami.</li>
+                        </ul>
                     </div>
                 </div>
                 
