@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magda Bocheńska - Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,10 +15,10 @@
     --color-badge-text: #0d4f10;
     --color-white: #ffffff;
     --color-divider: #1a1a1a;
-    
+
     --font-heading: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
-    
+
     --max-width: 1132px;
     --content-width: 672px;
     --spacing-lg: 162px;
@@ -132,7 +133,7 @@ body {
 .badge {
     display: inline-flex;
     align-items: center;
-    padding: 20px 20px;
+    padding: 18px 24px;
     background-color: var(--color-badge-bg);
     border-radius: 8px;
 }
@@ -215,7 +216,7 @@ body {
     cursor: pointer;
     font-family: var(--font-body);
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 20px;
     letter-spacing: -0.45px;
     color: var(--color-text);
@@ -247,27 +248,23 @@ body {
     padding: 0 0 0 28px;
 }
 
+.faq-answer p{
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 29.25px;
+  letter-spacing: -0.45px;
+  color: var(--color-text);
+  padding-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
 .faq-item.active .faq-answer {
-    max-height: 200px;
+    max-height: 420px;
     padding: 8px 0 24px 28px;
 }
 
-.faq-answer p {
-    font-family: var(--font-body);
-    font-size: 18px;
-    font-weight: 100;
-    line-height: 29.25px;
-    letter-spacing: -0.45px;
-    color: var(--color-text);
-}
-
-.faq-divider {
-    height: 0.5px;
-    background-color: var(--color-divider);
-    opacity: 1;
-}
-
-.faq-answer p {
 .faq-list {
     list-style: none;
     padding: 0;
@@ -281,20 +278,27 @@ body {
     line-height: 29.25px;
     letter-spacing: -0.45px;
     color: var(--color-text);
-    padding-bottom: 12px;
+    padding-bottom: 4px;
     position: relative;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .faq-list li::before {
     content: '-';
     position: absolute;
     left: 0;
+    padding-left: 25px;
     top: 0;
 }
 
 .faq-list li:last-child {
     padding-bottom: 0;
+}
+
+.faq-divider {
+    height: 0.5px;
+    background-color: var(--color-divider);
+    opacity: 1;
 }
 
 /* Blog and Resources */
@@ -342,46 +346,46 @@ body {
     .page {
         padding: 32px 24px 64px;
     }
-    
+
     .gradient-bg {
         width: calc(100% - 48px);
         height: 500px;
         left: 24px;
         top: 32px;
     }
-    
+
     .header {
         flex-direction: column;
         gap: 24px;
     }
-    
+
     .name {
         font-size: 42px;
         line-height: 46px;
         letter-spacing: -1px;
     }
-    
+
     .badge {
         padding: 16px 20px;
         align-self: flex-start;
     }
-    
+
     .badge span {
         font-size: 16px;
     }
-    
+
     .intro-title,
     .intro-body,
     .faq-question,
-    .faq-answer p {
+    .faq-list li {
         font-size: 16px;
         line-height: 26px;
     }
-    
+
     .faq-toggle {
         font-size: 24px;
     }
-    
+
     :root {
         --spacing-lg: 80px;
         --spacing-md: 64px;
@@ -394,19 +398,18 @@ body {
         font-size: 36px;
         line-height: 40px;
     }
-    
+
     .links {
         flex-wrap: wrap;
         gap: 16px;
     }
 }
     </style>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
     <div class="page">
         <div class="gradient-bg"></div>
-        
+
         <main class="content">
             <header class="header">
                 <h1 class="name">Magda Bocheńska</h1>
@@ -414,22 +417,22 @@ body {
                     <span>dostępność od lipca 2026</span>
                 </div>
             </header>
-            
+
             <section class="intro">
                 <p class="intro-title">
-                    Projektowanie doświadczeń i interfejsów, strategia UX i zarządzanie w designie. Prowadzę badania i tworzę rozwiązania cyfrowe zorientowane na użytkownika. Projektowałam dla takich firm i instytucji, jak m.in.: Filmoteka Narodowa - Instytut Audiowizualny, Ableton, Small Improvements, Nespresso, Nokia, NS&I, Atos, Fundacja Orange.
+                  Projektowanie doświadczeń i interfejsów, strategia UX i zarządzanie w designie. Prowadzę badania i tworzę rozwiązania cyfrowe zorientowane na użytkownika. Projektowałam dla takich firm i instytucji, jak m.in.: Filmoteka Narodowa - Instytut Audiowizualny, Ableton, Small Improvements, Nespresso, Nokia, NS&I, Atos, Fundacja Orange.
                 </p>
                 <p class="intro-body">
-                    Specjalizuję się we wspieraniu obszarów kultury, sztuki i zmiany społecznej. Każdy projekt współtworzę razem z klientem - to Wy jesteście specjalistami w swojej dziedzinie, a ja facylituję proces, którym wspólnie podążamy.
+                  Specjalizuję się we wspieraniu obszarów kultury, sztuki i zmiany społecznej. Każdy projekt współtworzę razem z klientem - to Wy jesteście specjalistami w swojej dziedzinie, a ja facylituję proces, którym wspólnie podążamy.
                 </p>
             </section>
-            
+
             <nav class="links">
-                <a href="mailto:magda@proces-tworczy.pl" class="link">Email</a>
-                <a href="https://www.linkedin.com/in/magdabochenska/" class="link">LinkedIn</a>
-                <a href="https://www.are.na/magia-b_/channels" class="link">Are.na</a>
-            </nav>
-            
+               <a href="mailto:magda@proces-tworczy.pl" class="link">Email</a>
+               <a href="https://www.linkedin.com/in/magdabochenska/" class="link">LinkedIn</a>
+               <a href="https://www.are.na/magia-b_/channels" class="link">Are.na</a>
+           </nav>
+
             <section class="faq">
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
@@ -437,46 +440,54 @@ body {
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Oferuję zarówno pełne prowadzenie projektu, jak i krótkoterminowe/jednorazowe wsparcie. Możesz na mnie liczyć, jeśli potrzebujesz.: </p>
-                        <ul class="faq-list">
-                            <li>nowej lub odświeżonej strony internetowej lub aplikacji,</li>
-                            <li>wsparcia na etapie koncepcji (np. badania z użytkownikami, research, wypracowanie strategii i roadmapy),</li>
-                            <li>przeprowadzenia jednorazowego lub cyklu warsztatów dla zespołu,</li>
-                            <li>wsparcia dla istniejącego zespołu projektowego,</li>
-                            <li>wsparcia w rekrutacji i budowania zespołu designerów,</li>
-                            <li>konsultacji na etapie wdrożenia i kontaktu z developerami.</li>
-                        </ul>
+                      <p>
+                        Oferuję zarówno pełne prowadzenie projektu, jak i krótkoterminowe/jednorazowe wsparcie. Możesz na mnie liczyć, jeśli potrzebujesz:
+                      </p>
+                      <ul class="faq-list">
+                       <li>nowej lub odświeżonej strony internetowej lub aplikacji,</li>
+                       <li>wsparcia na etapie koncepcji (np. badania z użytkownikami, research, wypracowanie strategii i roadmapy),</li>
+                       <li>przeprowadzenia jednorazowego wasztatu lub cyklu warsztatów dla zespołu,</li>
+                       <li>wsparcia dla istniejącego zespołu projektowego,</li>
+                       <li>wsparcia w rekrutacji i budowania zespołu designerów,</li>
+                       <li>konsultacji na etapie wdrożenia i kontaktu z developerami.</li>
+                   </ul>
                     </div>
                 </div>
-                
+
                 <div class="faq-divider"></div>
-                
+
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span class="faq-text">Jakiego podejścia się spodziewać?</span>
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Ważna jest dla mnie praca w zgodzie z moimi wartościami. Transparentność, dostępność, inkluzywność - włączanie w proces zarówno użytkowników (np. poprzez badania), jak i członków i członkinie organizacji. Poświęcam sporo czasu na wywiady i rozmowy, wychodząc z założenia, że dobre zrozumienie wyzwania, które przed nami stoi, jest kluczem do znalezienia właściwego rozwiązania. </p>
+                      <p>Ważna jest dla mnie praca w zgodzie z moimi wartościami. Transparentność, dostępność, inkluzywność - włączanie w proces zarówno użytkowników (np. poprzez badania), jak i członków i członkinie organizacji. Poświęcam sporo czasu na wywiady i rozmowy, wychodząc z założenia, że dobre zrozumienie wyzwania, które przed nami stoi, jest kluczem do znalezienia właściwego rozwiązania.
+                      </p>
                     </div>
                 </div>
-                
+
                 <div class="faq-divider"></div>
-                
+
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span class="faq-text">Jak możemy współpracować?</span>
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Specjalizuję się we wspieraniu instytucji kultury i organizacji pozarządowych. Współtworzę strategię razem z klientem - to Wy jesteście specjalistami w swojej dziedzinie, a ja facylituję i dokumentuję proces projektowy, którym wspólnie podążamy.</p>
+                        <ul class="faq-list">
+                            <li>Flexible engagement models: project-based or retainer</li>
+                            <li>Remote-first collaboration with regular check-ins</li>
+                            <li>Transparent pricing and timeline estimates</li>
+                            <li>Long-term partnership options for ongoing support</li>
+                        </ul>
                     </div>
                 </div>
-                
+
                 <div class="faq-divider"></div>
             </section>
-            <!--
-            <section class="blog-resources">
+
+            <!-- <section class="blog-resources">
                 <h2 class="blog-heading">Blog and resources</h2>
                 <div class="blog-links">
                     <a href="#" class="blog-link">Understanding the experience design process</a>
@@ -484,16 +495,16 @@ body {
                     <a href="#" class="blog-link">User research in non-profit environments</a>
                 </div>
             </section>
-            -->
+          -->
         </main>
     </div>
-    
+
     <script>
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', () => {
                 const item = button.closest('.faq-item');
                 const isExpanded = button.getAttribute('aria-expanded') === 'true';
-                
+
                 document.querySelectorAll('.faq-item').forEach(otherItem => {
                     if (otherItem !== item) {
                         otherItem.classList.remove('active');
@@ -501,7 +512,7 @@ body {
                         otherItem.querySelector('.faq-toggle').textContent = '+';
                     }
                 });
-                
+
                 if (isExpanded) {
                     item.classList.remove('active');
                     button.setAttribute('aria-expanded', 'false');
